@@ -1,0 +1,17 @@
+{
+  "name": "mocha-to-hipchat-reporter",
+  "version": "0.1.0",
+  "description": "Command-line tool that parses mocha json output and reports failed test to Hipchat.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "hipchatter": "^1.0.0",
+    "tv4": "^1.2.7"
+  }
+}

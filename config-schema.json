@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "config-schema.json",
+  "title": "Config Schema",
+  "required": ["hipchat"],
+  "type": "object",
+  "properties": {
+    "hipchat": {
+      "type": ["object"],
+      "description": "configuration for the hipchat connection",
+      "required": ["token", "channel"],
+      "properties": {
+        "token": {
+          "type": "string",
+          "description": "HipChat API Token"
+        },
+        "channel": {
+          "type": "string",
+          "description": "ID or name of the hipchat channel / room"
+        },
+        "color": {
+          "type": "string", 
+          "description": "Color for the messages in HipChat. Defaults to red.",
+          "pattern": "yellow|green|red|purple|gray|random"
+        }
+      }
+    }
+  }
+}
