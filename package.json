@@ -6,8 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "bin": {
+    "mocha-to-hipchat-reporter": "index.js"
+  },
+  "author": "Martin Stemmle",
+  "license": "",
   "dependencies": {
     "colors": "^1.1.2",
     "commander": "^2.9.0",
